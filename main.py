@@ -16,12 +16,14 @@ def is_armstrong(n):
         # Makes up the dictionary
         result = {
             "number": n_copy,
-            "is_armstrong": True
+            "is_armstrong": True,
+            "server IP": 'localhost'
         }
     else:
         result = {
             "number": n_copy,
-            "is_armstrong": False
+            "is_armstrong": False,
+            "server IP": 'localhost'
         }
     return jsonify(result) # converts the dictionary to JSON
 
